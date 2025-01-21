@@ -1,1 +1,1 @@
-# comp-250-interview-prep
+# COMP 250 interview prep
