@@ -64,7 +64,7 @@ public static int triangularSum(int n) {
 ```java
 public static int triangularSumDecomposition(int n) {
     int[] result = new int[n];
-    for (int i = 0; i < n.length / 2; i++) {
+    for (int i = 1; i <= n.length; i++) {
         result[i] = i;
     }
     return result;
