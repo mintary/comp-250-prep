@@ -184,7 +184,7 @@ public static int Cows(int[] solution, int[] guess) {
     Both frequency count dictionaries are of length 10 (which does not change depending on the size of the input). You could try creating a loop to iterate over them at the same time after counting your digits. How could this be useful?
 </details>
 
-**Extension:** For the interview problem you'd need to add bulls as well. But you want to make sure you're not double-counting your cows.
+**Extension:** For the interview problem you'd need to add bulls as well. But you want to make sure you're not double-counting your cows. There are many ways of doing this `:)`
 
 ### 2D arrays
 
