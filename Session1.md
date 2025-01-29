@@ -21,7 +21,28 @@ This is based on how the algorithm's speed or space taken up changes as _the inp
 
 For now, all you need to know is that primitive operations (such as assigning a variable, math operations, etc) count as one step.
 
-The number of total steps is usually a function of $n$. If you may have to iterate over an array and look at every value, you'd need $n$ steps. We would denote this $O(n)$ (you'll learn what this means more specifically later).
+The number of total steps is usually a function of $n$. If the function for the number of steps is linear, we call this $O(n)$. For example,
+```java
+public static int countEveryOther(int n) {
+   for (int i = 0; i < n; i += 2) {
+      System.out.println(i);
+   }
+}
+```
+...has $n/2 + 1$ steps (the loop condition counts as one step). This is a linear function, so we denote it $O(n)$.
+
+But here:
+```java
+public static int triangularSumSlow(int n) {
+   int result = 0;
+   for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= i; j++) {
+         result += 1;
+      } 
+   }
+}
+```
+...has an outer loop that will run $n$ times. The `result += 1` step will run once in the first iteration, then twice, and in the last $n$-th iteration run $n$ times. So if you were to sum the number of steps, you'd get $1 + 2 + ... + n$ which is $n(n+1) / 2$, which is a quadratic function. This is why this is considered $O(n^2)$. 
 
 The space complexity similarly could depend on $n$. For example, if you wanted to create an array of $n$ slots, then you'd have $O(n)$ space complexity.
 
@@ -43,7 +64,7 @@ public static int triangularSum(int n) {
 ```java
 public static int triangularSumDecomposition(int n) {
     int[] result = new int[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n.length / 2; i++) {
         result[i] = i;
     }
     return result;
