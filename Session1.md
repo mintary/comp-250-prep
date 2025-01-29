@@ -135,12 +135,12 @@ public static int[] mergeSortedArrays(int[] a, int[] b) {
 
 <details>
     <summary>Hint 1</summary>
-    Use two different pointers for each of the arrays. 
+    Use a different pointer for each of the arrays. 
 </details>
 
 <details>
     <summary>Hint 2</summary>
-    At the start of each iteration, you could choose to the value pointed to by one of the pointers, or add both of the values from both pointers. But is there a case where either of these approaches would fail? Consider A = [0, 1, 2] and B = [2, 5]
+    At the start of each iteration, you could choose to add the value pointed to by one of the pointers, or add both of the values from both pointers to your sorted array. But is there a case where either of these approaches would fail? Consider A = [0, 1, 2] and B = [2, 5]
 </details>
 
 <details>
