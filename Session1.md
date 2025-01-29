@@ -33,6 +33,11 @@ public static int triangularSum(int n) {
 }
 ```
 
+<details>
+    <summary>Answer</summary>
+    O(1) time and space
+</details>
+
 2. What is the time complexity of this program? What is the space complexity?
 
 ```java
@@ -44,6 +49,11 @@ public static int triangularSumDecomposition(int n) {
     return result;
 }
 ```
+
+<details>
+    <summary>Answer</summary>
+    O(n) time and space
+</details>
 
 3. What is the time complexity of this program? What is the space complexity?
 
@@ -108,7 +118,7 @@ What's the time and space complexity? Can you do better?
 
 ## Practice problems
 
-These problems are related to the technical exercises (intended to help you solve them), either as similar problems or as subproblems. No solutions will be provided, but you're welcome to ask about them.
+These problems are related to the technical exercises (intended to help you solve them), either as similar problems or as subproblems. No solutions will be provided, but you're welcome to ask for help.
 
 ### 1D arrays
 
@@ -162,6 +172,11 @@ public static int Cows(int[] solution, int[] guess) {
 <details>
     <summary>Hint 2</summary>
     The difficulty here is that you could have multiple cows, and multiple of the same cow (ex. '4512' and '1229'). You'd need to keep track of each cow somehow. 
+</details>
+
+<details>
+    <summary>Hint 3</summary>
+    Try using an integer array (or even multiple...) as a dictionary. If you could keep track of the frequency of each digit in both the guess and the solution, how could you use this information to get the number of cows?
 </details>
 
 **Extension:** For the interview problem you'd need to add bulls as well. But you want to make sure you're not double-counting your cows.
