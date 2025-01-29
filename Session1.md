@@ -23,7 +23,7 @@ For now, all you need to know is that primitive operations (such as assigning a 
 
 The number of total steps is usually a function of $n$. If the function for the number of steps is linear, we call this $O(n)$. For example,
 ```java
-public static int countEveryOther(int n) {
+public static void countEveryOther(int n) {
    for (int i = 0; i < n; i += 2) {
       System.out.println(i);
    }
