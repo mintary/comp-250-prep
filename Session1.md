@@ -80,7 +80,7 @@ public static int messyLowercaseCount(String s) {
     It's tempted to say that this is O(n^2) since we see an inner nested loop. But notice that the inner loop runs a maximum of 5 times, no matter what n is. This gives us a time complexity of O(n). We use constant space for our character array, so the space complexity is O(1).
 </details>
 
-**Key takeaway:** The number of nested loops can be misleading. You could also have constant space/time loops that don't depend on $n$. Ask yourself what happen as $n$ gets very, very big. What parts of your program would require way more resources? Which parts wouldn't?
+**Key takeaway:** The number of nested loops can be misleading. Ask yourself what happen as $n$ gets very, very big. What parts of your program would require way more resources? Which parts wouldn't?
 
 Try writing how many steps each loop in your program would take, depending on $n$. You could even use a sample input and count how many steps you need.
 
