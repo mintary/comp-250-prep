@@ -42,7 +42,7 @@ public static int triangularSumSlow(int n) {
    }
 }
 ```
-...has an outer loop that will run $n$ times. The `result += 1` step will run once in the first iteration, then twice, and in the last $n$-th iteration run $n$ times. So if you were to sum the number of steps, you'd get $1 + 2 + ... + n$ which is $n(n+1) / 2 $, which is a quadratic function. This is why this is considered $O(n^2)$. 
+...has an outer loop that will run $n$ times. The `result += 1` step will run once in the first iteration, then twice, and in the last $n$-th iteration run $n$ times. So if you were to sum the number of times that print statement runs, you'd get $1 + 2 + ... + n$ which is $n(n+1) / 2 $, which is a quadratic function. This is why this is considered $O(n^2)$. 
 
 The space complexity similarly could depend on $n$. For example, if you wanted to create an array of $n$ slots, then you'd have $O(n)$ space complexity.
 
