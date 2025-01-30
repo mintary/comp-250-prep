@@ -8,7 +8,7 @@ Write a method that takes a String as input and returns a boolean indicating whe
 
 ### Questions to ask yourself
 
-1. What are some possible inputs? What would these output?
+1. What are some possible inputs? What would these output? Draw out a few examples. Without thinking about how you would code it, how would you, as a human, approach the problem?
 2. If having limited time and space wasn't a problem - how would you approach this problem (**brute-force approach**)? What's the simplest way you can think of?
 3. What tools do you have at your disposal? Are there any data structures, algorithms, or patterns you've learned?
    - For example, an array being sorted could be a good indicator you can use binary search.
