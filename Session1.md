@@ -95,12 +95,12 @@ public static int messyLowercaseCount(String s) {
 
     int i = 0, j = 0;
     while (i < n) {
-        while (j < n && j <= i + 5) {
-            char c = input[j];
-            if (c >= 'a' && c <= 'z') {
-                letterCounts[c - 'a']++;
-            }
-            j++;
+         int j = i;
+         while (j < n && j <= i + 5) {
+               char c = input[j];
+               if (c >= 'a' && c <= 'z') {
+                   letterCounts[c - 'a']++;
+               }
         }
         i++;
     }
