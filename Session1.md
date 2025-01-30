@@ -211,3 +211,91 @@ public static int Cows(int[] solution, int[] guess) {
 ### 2D arrays
 
 #### Problem 1
+
+https://leetcode.com/problems/shift-2d-grid/description/
+
+Given a 2D grid of size m x n and an integer `k`. You need to shift the grid `k` times. Can yo do this in $O(m * n)$?
+
+In one shift operation:
+
+- Element at `grid[i][j]` moves to `grid[i][j + 1]`.
+- Element at `grid[i][n - 1]` moves to `grid[i + 1][0]`.
+- Element at `grid[m - 1][n - 1]` moves to `grid[0][0]`.
+
+Return the 2D grid after applying shift operation `k` times.
+
+![Shift operation](image.png)
+
+Input: `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 1`
+Output:` [[9,1,2],[3,4,5],[6,7,8]]`
+
+![Shift operation 4 times](image-1.png)
+Input: `grid = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4`
+Output: `[[12,0,21,13],[3,8,1,9],[19,7,2,5],[4,6,11,10]]`
+
+```java
+public int[][] shiftGrid(int[][] grid, int k ) {
+    // code here
+}
+```
+
+<details>
+    <summary>Hint 1</summary>
+    Rather than think about shifting the entire grid k times, try thinking about shifting each element k positions.
+</details>
+
+<details>
+    <summary>Hint 2</summary>
+    Can you decompose on element's shift into a row shift and a column shift? What happens if adding k would make you exceed the total number of rows or columns?
+</details>
+
+<details>
+    <summary>Hint 3</summary>
+    Modular arithmetic could be useful here.
+</details>
+
+<details>
+    <summary>Hint 4</summary>
+    For every element [i,j] in your 2D array, you need to generate a new i and new j. You could add k to your j to get the right column (modulo m). If you start at [0,0], and k = 6, then your new position is (0 + 6) % 3. But your row is now at 2. How can you make sure you're accounting for the rightward column shifts in calculating your new row position?
+</details>
+
+#### Problem 2
+
+https://leetcode.com/problems/search-a-2d-matrix/description/
+
+You are given an `m x n` integer matrix `matrix` with the following two properties:
+
+- Each row is sorted in non-decreasing order.
+- The first integer of each row is greater than the last integer of the previous row.
+
+Given an integer target, return true if target is in matrix or false otherwise.
+
+You must write a solution in $O(log(m * n))$ time complexity.
+
+![Example 1](image-2.png)
+Input: `matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3`
+Output: `true`
+
+![Example 2](image-3.png)
+Input: `matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13`
+Output: `false`
+
+<details>
+    <summary>Hint 1</summary>
+    The rows and columns are sorted. What search algorithm relies on having a sorted sequence?
+</details>
+
+<details>
+    <summary>Hint 2</summary>
+    You always have access to the row you're in, including the leftmost element in the row and rightmost element in that row. How could this information help you decide where to search next?
+</details>
+
+<details>
+    <summary>Hint 3</summary>
+    Perform a binary search with the rows, but modify the search condition. When the value at the start of the row is larger than the target element, you know to search the right half of the rows. When the value at the end of the row is smaller than the target element, you know to search the left half of the rows.
+</details>
+
+<details>
+    <summary>Hint 4</summary>
+    The main idea is that you first perform binary search on the rows by using the leftmost and rightmost elements in that row, then once you've narrowed down the binary search to one row, you perform binary search within the row.
+</details>
