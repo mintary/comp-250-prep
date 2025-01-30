@@ -13,7 +13,7 @@ Write a method that takes a String as input and returns a boolean indicating whe
 3. What tools do you have at your disposal? Are there any data structures, algorithms, or patterns you've learned?
    - For example, an array being sorted could be a good indicator you can use binary search.
 4. Are there any tricky edge cases?
-5. Can you break this problem into subproblems, and solve them separately? Remember that you can always bring in helper methods.
+5. Can you break this problem into subproblems, and solve them separately? Remember that you can always bring in helper methods. If your input is an array, could you isolate working with a single element in the array at first?
 
 ### Time and space complexity
 
