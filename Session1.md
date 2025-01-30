@@ -164,7 +164,7 @@ public static int[] mergeSortedArrays(int[] a, int[] b) {
 
 <details>
     <summary>Hint 1</summary>
-    Use a different pointer for each of the arrays. 
+    Use a different pointer for each of the arrays. On a piece of paper, try drawing out the arrays. How would you move the pointers, as a human?
 </details>
 
 <details>
