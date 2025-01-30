@@ -22,6 +22,7 @@ This is based on how the algorithm's speed or space taken up changes as _the inp
 For now, all you need to know is that primitive operations (such as assigning a variable, math operations, etc) count as one step.
 
 The number of total steps is usually a function of $n$. If the function for the number of steps is linear, we call this $O(n)$. For example,
+
 ```java
 public static void countEveryOther(int n) {
    for (int i = 0; i < n; i += 2) {
@@ -29,21 +30,24 @@ public static void countEveryOther(int n) {
    }
 }
 ```
+
 ...has $n/2 + 1$ steps (the loop condition counts as one step). This is a linear function, so we denote it $O(n)$.
 
 But here:
+
 ```java
 public static int triangularSumSlow(int n) {
    int result = 0;
    for (int i = 1; i <= n; i++) {
       for (int j = 1; j <= i; j++) {
          result += 1;
-      } 
+      }
    }
    return result;
 }
 ```
-...has an outer loop that will run $n$ times. The `result += 1` step will run once in the first iteration, then twice, and in the last $n$-th iteration run $n$ times. So if you were to sum the number of times that print statement runs, you'd get $1 + 2 + ... + n$ which is $n(n+1) / 2 $, which is a quadratic function. This is why this is considered $O(n^2)$. 
+
+...has an outer loop that will run $n$ times. The `result += 1` step will run once in the first iteration, then twice, and in the last $n$-th iteration run $n$ times. So if you were to sum the number of times that print statement runs, you'd get $1 + 2 + ... + n$ which is $n(n+1) / 2 $, which is a quadratic function. This is why this is considered $O(n^2)$.
 
 The space complexity similarly could depend on $n$. For example, if you wanted to create an array of $n$ slots, then you'd have $O(n)$ space complexity.
 
@@ -279,6 +283,12 @@ Output: `true`
 ![Example 2](image-3.png)
 Input: `matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13`
 Output: `false`
+
+```java
+public boolean searchMatrix(int[][] matrix, int target) {
+    // code here
+}
+```
 
 <details>
     <summary>Hint 1</summary>
