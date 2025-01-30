@@ -21,6 +21,10 @@ This is based on how the algorithm's speed or space taken up changes as _the inp
 
 For now, all you need to know is that primitive operations (such as assigning a variable, math operations, etc) count as one step.
 
+$O(1)$: All functions that are constants (of the form $c$, where $c$ is a constant). 
+$O(n)$: All functions that are linear (of the form $c_1 \cdot n + c_2$, where $c_1, c_2$ are constants).
+$O(n^2)$: All functions that are quadratic (of the form $c_1 \cdot n^2 + c_2 \cdot n + c_3$) where $c_1, c_2, c_3$ are constants).
+
 The number of total steps is a function of $n$. If the function for the number of steps is linear, we call this $O(n)$. For example,
 
 ```java
