@@ -21,7 +21,7 @@ This is based on how the algorithm's speed or space taken up changes as _the inp
 
 For now, all you need to know is that primitive operations (such as assigning a variable, math operations, etc) count as one step.
 
-The number of total steps is usually a function of $n$. If the function for the number of steps is linear, we call this $O(n)$. For example,
+The number of total steps is a function of $n$. If the function for the number of steps is linear, we call this $O(n)$. For example,
 
 ```java
 public static void countEveryOther(int n) {
