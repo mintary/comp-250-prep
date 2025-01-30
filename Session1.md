@@ -260,7 +260,7 @@ public int[][] shiftGrid(int[][] grid, int k ) {
 
 <details>
     <summary>Hint 4</summary>
-    For every element [i,j] in your 2D array, you need to generate a new i and new j. You could add k to your j to get the right column (modulo m). If you start at [0,0], and k = 6, then your new position is (0 + 6) % 3. But your row is now at 2. How can you make sure you're accounting for the rightward column shifts in calculating your new row position?
+    For every element [i,j] in your 2D array, you need to generate a new i and new j. You could add k to your j to get the right column (modulo m). If you start at [0,0], and k = 6, then your new column position is (0 + 6) % 3 = 0. But your row is now at 2. How can you make sure you're accounting for the rightward column shifts in calculating your new row position?
 </details>
 
 #### Problem 2
