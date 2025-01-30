@@ -234,6 +234,7 @@ Input: `grid = [[1,2,3],[4,5,6],[7,8,9]], k = 1`
 Output:` [[9,1,2],[3,4,5],[6,7,8]]`
 
 ![Shift operation 4 times](image-1.png)
+
 Input: `grid = [[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], k = 4`
 Output: `[[12,0,21,13],[3,8,1,9],[19,7,2,5],[4,6,11,10]]`
 
@@ -279,10 +280,12 @@ You must write a solution in $O(log(m * n))$ time complexity.
 **Note:** This is similar to Exercise 5 in the exercise list, but in Exercise 5, the rightmost value in each row is not necessarily larger than the leftmost value in the next row. 
 
 ![Example 1](image-2.png)
+
 Input: `matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3`
 Output: `true`
 
 ![Example 2](image-3.png)
+
 Input: `matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13`
 Output: `false`
 
