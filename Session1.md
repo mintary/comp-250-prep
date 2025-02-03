@@ -280,7 +280,7 @@ Given an integer target, return true if target is in matrix or false otherwise.
 
 You must write a solution in $O(log(m * n))$ time complexity.
 
-**Note:** This is similar to Exercise 5 in the exercise list, but in Exercise 5, the rightmost value in each row is not necessarily larger than the leftmost value in the next row. 
+**Note:** This is similar to Exercise 5 in the exercise list, but in Exercise 5, the rightmost value in each row is not necessarily smaller than the leftmost value in the next row. 
 
 ![Example 1](image-2.png)
 
