@@ -179,7 +179,7 @@ public static int[] mergeSortedArrays(int[] a, int[] b) {
 
 <details>
     <summary>Hint 4</summary>
-    Let's say you have A = [0, 1, 3, 4] and [2, 5, 6]. Your pointer starts at 0 in the first array, and 2 in the second. You'd put the 0 in your sorted array first. But after this, you have to decide to move either the pointer pointing to the smaller value (A) or the pointer pointing to the larger value (B). If you move the A pointer, you'd end up at 2, and would compare A[1] = 2 with B[0] = 2. But if you move the B pointer, you'd end up at 5, and be comparing A[0] = 0 with A[1] = 5. Should you move the pointer at the smaller or larger value? Why? 
+    Let's say you have A = [0, 1, 3, 4] and [2, 5, 6]. Your pointer starts at 0 in the first array, and 2 in the second. You'd put the 0 in your sorted array first. But after this, you have to decide to move either the pointer pointing to the smaller value (A) or the pointer pointing to the larger value (B). If you move the A pointer, you'd end up at 1, and would compare A[1] = 1 with B[0] = 2. But if you move the B pointer, you'd end up at 5, and be comparing A[0] = 0 with A[1] = 5. Should you move the pointer at the smaller or larger value? Why? 
 </details>
 
 #### Problem 2
