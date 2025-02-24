@@ -95,7 +95,7 @@ boolean empty() {
 ### Implement Queue by Stack (Q19)
 **Solution can't shared by us, sorry**
 
-*Hint: use one stack for input, and the other stack for output*
+*Hint: use one for input, and the other for output*
 
 ### Properties of data structure in application (Q20)
 **Solution can't shared by us, sorry**
