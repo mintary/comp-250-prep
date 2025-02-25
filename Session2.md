@@ -25,11 +25,10 @@ Congrats, you have a queue.
 **Algorithm in text will be updated after the session.**
 
 -By one queue:
-```
+```java
 /** Have our queue ready. */
-public MyStack() {
-    queue = new Queue;
-}
+
+queue = new Queue;
 
 /** Push element x onto stack. */
 push(x) {
@@ -41,7 +40,7 @@ push(x) {
 }
 
 /** Removes the element on top of the stack and returns that element. */
-public int pop() {
+pop() {
     return queue.dequeue();
 }
 
@@ -59,7 +58,7 @@ boolean empty() {
 
 -By two queues:
 
-```
+```java
 /*first have two queues ready*/
 queue1 = new Queue;
 queue2 = new Queue;
