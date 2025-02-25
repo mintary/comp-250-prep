@@ -108,6 +108,9 @@ boolean empty() {
 
 ### Properties of Linked List (Object) (Q14)
 
+**Solution can't shared by us, sorry**
+
+*Hint: use pointers/references to keep track the object!! use a lot (but of course essential ones)*
 
 
 
