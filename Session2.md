@@ -22,7 +22,7 @@ Congrats, you have a queue.
 
 ### Implement Stack by Queue (Warm up)
 
-**Algorithms explained**
+**Algorithm in text will be updated after the session.**
 
 -By one queue:
 ```
@@ -93,24 +93,27 @@ boolean empty() {
 ```
 
 ### Implement Queue by Stack (Q19)
-**Solution can't shared by us, sorry**
+**Solution can't be shared by us, sorry**
 
 *Hint: use one for input, and the other for output*
 
 ### Properties of data structure in application (Q20)
-**Solution can't shared by us, sorry**
+**Solution can't be shared by us, sorry**
 
 *Hint: think how can queue and/or stack track the search*
 
 ### Any Question you may have in this part (Q&A)
 
 ## Linked List
+### Linked List? Linked?
+
+1. A points to B, B points to C -- singly linked list;\
+A points to B and vice versa, B points to C vice versa -- doubly linked list
+2. Remember you only get the data through pointer: well, it'd better have some one that refers to itself, and luckly it does.
+3. **Strong** object property. (Sea of pointers)
 
 ### Properties of Linked List (Object) (Q14)
 
-**Solution can't shared by us, sorry**
+**Solution can't be shared by us, sorry**
 
 *Hint: use pointers/references to keep track the object!! use a lot (but of course essential ones)*
-
-
-
