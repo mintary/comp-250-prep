@@ -1,6 +1,6 @@
 # Session 3
 
-This session is aimed at helping you tackle the Recursion portions of the interview questions. **Problem 1** and **Problem 3** are very similar to some of the interview questions, while **Problem 2**, **Problem 4**, and **Problem 5** are meant to lead you towards a specific interview question!
+This session is aimed at helping you tackle the Recursion portions of the interview questions. These problems are all very similar to the actual problems in the interview set, or even just intended to lead you towards a solution for an actual problem.
 
 If you are not a Problem Solver, it will also help you if you are struggling with recursion and would like walkthroughs of recursive algorithms.
 
