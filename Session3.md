@@ -114,7 +114,7 @@ Output: [[1, 1, 1, 1], [2, 1, 1], [2, 2], [3, 1]]
 3. What kind of information would our recursive calls like to know? Write a method signature to reflect what parameters we should pass.
 4. What should you do if at some recursive step, the sum of `curr` exceeds `n`?
 5. What should you do if at some recursive step, the sum of `curr` is equal to `n`?
-6. Draw the recursion tree for this problem, including how `curr` is being modified through successive recursive calls.
+6. Draw the recursion tree for this problem, including how `curr` is being modified through successive recursive calls. Step through an example call of your method. What's the order the recursive calls are called in? 
 
 #### Problem 4: Modified binary search
 
