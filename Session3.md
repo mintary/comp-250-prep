@@ -110,7 +110,7 @@ Output: [[1, 1, 1, 1], [2, 1, 1], [2, 2], [3, 1]]
 #### Steps to go through
 
 1. What is the maximum integer you can have in any combination?
-2. Let's say I have this array: `curr = [1], n = 3`, where `curr` represents an array of integers we are building. Give me a list of numbers I can try adding to get to `n = 3` at each recursive step.
+2. Let's say I have this array: `curr = [1], n = 3`, where `curr` represents an array of integers we are building. Give me a range of possible options for the next number I add to this array.
 3. What kind of information would our recursive calls like to know? Write a method signature to reflect what parameters we should pass.
 4. What should you do if at some recursive step, the sum of `curr` exceeds `n`?
 5. What should you do if at some recursive step, the sum of `curr` is equal to `n`?
