@@ -197,6 +197,7 @@ pairs_closed = 1
 ```
 
 Branching off of **Possibility 1**, we don't have any pairs left. So our only choice is to add a right parenthesis.
+
 **Possibility 1.1**
 
 ```
@@ -207,6 +208,7 @@ pairs_closed = 1
 ```
 
 Branching off of **Possibility 1.1**, we don't have any pairs left. So our only choice is to add a right parenthesis.
+
 **Possibility 1.1.1**
 
 ```
