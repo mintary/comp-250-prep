@@ -44,7 +44,7 @@ Output: [[1], [1, 1], [1, 2, 1]]
 
 1. Work through `n = 4`.
 2. What information do you need to calculate the $n^{\text{th}}$ row? Hint: you may need a loop in your recursive method.
-3. Draw the recursion tree.
+3. Write the pseudocode of your method. Where should you perform the recursive call? When will it return?
 4. Write a recurrence to represent the time complexity of your solution.
 
 #### Problem 2: Climbing stairs
