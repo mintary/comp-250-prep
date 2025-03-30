@@ -10,8 +10,7 @@ If you are not a Problem Solver, it will also help you if you are struggling wit
 - Order of recursive calls
 - Recursion trees
 - Memoization\*
-- Backtracking\*
-
+- 
 \*Beyond what was taught in class, but techniques that are useful for the interview questions.
 
 ## Practice problems
