@@ -82,39 +82,31 @@ Output: 2
 
 **Bonus:** Are there any repeated recursive calls? Can we make this method faster by storing our results somewhere and checking first to see if we have calculated it before? This is known as **memoization**.
 
-#### Problem 3: Generating combinations
+#### Problem 3: Generating permutations
 
-**Problem statement:** You are given a number $n$. Return a list of unique combinations to produce this sum. Note that all integers are positive and greater than 0. The lists of numbers must be unique, i.e. `[1, 2, 2]` is the same as `[2, 2, 1]` and hence you should only include it once. 
-
-```
-Input: n = 1
-Output: []
-```
+**Problem statement:** You are given a string $s$. Return a list of all permutations of this string. Your list cannot contain duplicates.
 
 ```
-Input: n = 2
-Output: [[1, 1]]
+Input: s = "BC"
+Output: ["BC", CB"]
 ```
 
 ```
-Input: n = 3
-Output: [[1, 1, 1], [2, 1]]
+Input: s = "ABC"
+Output: ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]
 ```
 
 ```
-Input: n = 4
-Output: [[1, 1, 1, 1], [2, 1, 1], [2, 2], [3, 1]]
+Input: s = "AAB"
+Output: ["AAB", "ABA", "BAA"]
 ```
 
 #### Steps to go through
 
-1. What is the maximum integer you can have in any combination?
-2. Let's say I have this array: `curr = [1], n = 3`, where `curr` represents an array of integers we are building. Give me a range of possible options for the next number I add to this array.
-4. What should you do if at some recursive step, the sum of `curr` would exceed `n`?
-5. What should you do if at some recursive step, the sum of `curr` is equal to `n`?
-6. What kind of information would our recursive calls like to know? Write a method signature to reflect what parameters we should pass.
-7. Write the pseudocode of your solution.
-8. Draw the recursion tree for this problem, including how `curr` is being modified through successive recursive calls. Step through an example call of your method. What's the order the recursive calls are called in? 
+1. Rather than find all permutations of the entire string, what if you already had access to all the permutations of a *substring* (look at the examples)? What could you do with this information?
+2. Draw a recursion tree to represent this problem. What string do you pass as input to each recursive call?
+3. Describe the order of recursive calls. When do you return to a root recursive call?
+4. In thie problem, you have to return a list. When should you "save" a permutation to this list in a way that prevents duplicates? Hint: Consider the order of recursive calls. 
 
 #### Problem 4: Modified binary search
 
