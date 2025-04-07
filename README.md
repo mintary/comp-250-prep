@@ -5,7 +5,6 @@ Feel free to message either Sihan or Emily if you have any suggestions or reques
 
 ## Posted material
 ### Session 1 (arrays, strings, a brief intro to time complexity)
-![Session1.md](Session 1)
 Corresponds to the **arrays and strings** section of the technical interview question list.
 
 ### Session 2 (stacks/queues, linked lists)
