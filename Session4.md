@@ -2,7 +2,7 @@
 
 This session is aimed at helping you tackle the Trees portion of the interview questions. These problems are all very similar to the actual problems in the interview set, or even just intended to lead you towards a solution for an actual problem.
 
-If you are not a Problem Solver, it will also help you if you are struggling with recursion and would like walkthroughs of tree algorithms.
+If you are not a Problem Solver, it will also help you if you are struggling with trees and would like walkthroughs of tree algorithms.
 
 ## Topics/skills:
 
