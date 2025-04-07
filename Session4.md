@@ -16,14 +16,9 @@ If you are not a Problem Solver, it will also help you if you are struggling wit
 
 ### Problem 1: A level-order traversal
 
-Print the nodes on each level of a given tree, 
+Print the nodes on each level of a given tree,
 
-```
-5: 1, 4, 6  
-1: 12  
-4: 2  
-6: 10, 8  
-```
+![tree_1.png](tree_1.png)
 
 ```
 Output:
