@@ -35,7 +35,7 @@ Output:
     5, 1, 4, 6, 12, 2, 10, 8
 </details>
 
-2. There's an iterative and recursive approach. At what point in either approach can we consider a traversal of a level "over"?
+ At what point in either approach can we consider a traversal of a level "over"?
 
 3. Step your way through the algorithm with the example tree. Then, construct your own tree and step through it with that one.
 
