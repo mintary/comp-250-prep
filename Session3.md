@@ -10,7 +10,6 @@ If you are not a Problem Solver, it will also help you if you are struggling wit
 - Order of recursive calls
 - Recursion trees
 - Memoization\*
-- Backtracking\*
 
 \*Beyond what was taught in class, but techniques that are useful for the interview questions.
 
@@ -44,7 +43,7 @@ Output: [[1], [1, 1], [1, 2, 1]]
 
 1. Work through `n = 4`.
 2. What information do you need to calculate the $n^{\text{th}}$ row? Hint: you may need a loop in your recursive method.
-3. Draw the recursion tree.
+3. Write the pseudocode of your method. Where should you perform the recursive call? When will it return?
 4. Write a recurrence to represent the time complexity of your solution.
 
 #### Problem 2: Climbing stairs
@@ -83,38 +82,31 @@ Output: 2
 
 **Bonus:** Are there any repeated recursive calls? Can we make this method faster by storing our results somewhere and checking first to see if we have calculated it before? This is known as **memoization**.
 
-#### Problem 3: Generating combinations
+#### Problem 3: Generating permutations
 
-**Problem statement:** You are given a number $n$. Return a list of unique combinations to produce this sum. The lists of numbers must be unique, i.e. `[1, 2, 2]` is the same as `[2, 2, 1]` and hence you should only include it once. Note: 0 cannot be a part of this sum.
-
-```
-Input: n = 1
-Output: []
-```
+**Problem statement:** You are given a string $s$. Return a list of all permutations of this string. Your list cannot contain duplicates.
 
 ```
-Input: n = 2
-Output: [[1, 1]]
+Input: s = "BC"
+Output: ["BC", CB"]
 ```
 
 ```
-Input: n = 3
-Output: [[1, 1, 1], [2, 1]]
+Input: s = "ABC"
+Output: ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]
 ```
 
 ```
-Input: n = 4
-Output: [[1, 1, 1, 1], [2, 1, 1], [2, 2], [3, 1]]
+Input: s = "AAB"
+Output: ["AAB", "ABA", "BAA"]
 ```
 
 #### Steps to go through
 
-1. What is the maximum integer you can have in any combination?
-2. Let's say I have this array: `curr = [1], n = 3`, where `curr` represents an array of integers we are building. Give me a list of numbers I can try adding to get to `n = 3` at each recursive step.
-3. What kind of information would our recursive calls like to know? Write a method signature to reflect what parameters we should pass.
-4. What should you do if at some recursive step, the sum of `curr` exceeds `n`?
-5. What should you do if at some recursive step, the sum of `curr` is equal to `n`?
-6. Draw the recursion tree for this problem, including how `curr` is being modified through successive recursive calls.
+1. Rather than find all permutations of the entire string, what if you already had access to all the permutations of a *substring* (look at the examples)? What could you do with this information?
+2. Draw a recursion tree to represent this problem. What string do you pass as input to each recursive call?
+3. Describe the order of recursive calls. When do you return to a root recursive call?
+4. In thie problem, you have to return a list. When should you "save" a permutation to this list in a way that prevents duplicates? Hint: Consider the order of recursive calls. 
 
 #### Problem 4: Modified binary search
 
@@ -124,7 +116,7 @@ Output: [[1, 1, 1, 1], [2, 1, 1], [2, 2], [3, 1]]
 
 ```
 Input: A = [1, 2, 2, 2, 4], k = 2
-Output: 2
+Output: 3
 ```
 
 ```
@@ -196,6 +188,7 @@ pairs_closed = 1
 ```
 
 Branching off of **Possibility 1**, we don't have any pairs left. So our only choice is to add a right parenthesis.
+
 **Possibility 1.1**
 
 ```
@@ -206,6 +199,7 @@ pairs_closed = 1
 ```
 
 Branching off of **Possibility 1.1**, we don't have any pairs left. So our only choice is to add a right parenthesis.
+
 **Possibility 1.1.1**
 
 ```
