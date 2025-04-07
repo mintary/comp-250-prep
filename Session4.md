@@ -18,7 +18,7 @@ If you are not a Problem Solver, it will also help you if you are struggling wit
 
 Print the nodes on each level of a given tree.
 
-![[tree_1.png]]
+![tree_1.png](tree_1.png)
 
 ```
 Output:
@@ -49,7 +49,7 @@ Design an algorithm that can will return `true` if a **binary** tree is balanced
 
 1. Which one of these trees are balanced? How can you tell?
 
-![[balanced_trees.png]]
+![balanced_trees.png](balanced_trees.png)
 
 <details>
     <summary>Answer</summary>
@@ -73,7 +73,7 @@ Can you see how we can get the height of the **entire** tree from the heights of
 
 Design an algorithm that given two expression trees determines whether one represents a subexpression of the other. A subexpression is a part of an expression that is by itself a correct expression.
 
-![[subexpression_trees.png]]
+![subexpression_trees.png](subexpression_trees.png)
 
 #### Steps to go through
 
@@ -96,7 +96,7 @@ Design an algorithm that given two expression trees determines whether one repre
 
 A **binary search tree** is a tree where for **every node** in the tree, all nodes in the left subtree are smaller than that node, and all nodes in the right subtree are larger than that node.
 
-![[binary_search_trees.png]]
+![binary_search_trees.png](binary_search_trees.png)
 
 Notice that one of these trees has minimal height and the other doesn't.
 
@@ -148,7 +148,7 @@ Source: https://leetcode.com/problems/path-sum-iii/description
 
 Consider a binary search tree create by going through an array of integers and adding each element to the tree one by one. Design an algorithm that takes as input a reference to the root node of a binary search tree and returns a list of all the possible arrays that could have led to the construction of this tree.
 
-![[binary_search_tree_array.png]]
+![binary_search_tree_array.png](binary_search_tree_array.png)
 
 ```
 output:
