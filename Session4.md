@@ -171,7 +171,7 @@ output:
 
 #### Steps to go through:
 
-Here's the algorithm for constructing a binary search tree by traversing an array (unsorted).
+Here's the algorithm for constructing a binary search tree. We will run this `insert` operation for every element in our array, in order of left to right.
 
 ```java
 static Node insert(Node root, int x) {
