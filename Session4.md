@@ -39,7 +39,7 @@ Output:
 
 3. Step your way through the algorithm with the example tree. Then, construct your own tree and step through it with that one.
 
-### Problem 2: Comparing trees
+### Problem 2: Validating balanced trees
 
 We say that a tree is **balanced** if for **every** node in the tree, the heights of the two subtrees do not differ by more than 1.
 
