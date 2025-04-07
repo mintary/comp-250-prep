@@ -10,7 +10,7 @@ If you are not a Problem Solver, it will also help you if you are struggling wit
 - Travelling from a source node to destination node and reporting results
 - Comparing trees (equality, balance, BST)
 - Recursion with trees, passing down parameters
-- Heaps (not covered today, but the problems are implementations of algorithms you see in class)
+- Heaps (not covered today `:(`)
 
 ## Practice problems
 
