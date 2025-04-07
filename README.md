@@ -12,6 +12,10 @@ Corresponds to the **arrays and strings** section of the technical interview que
 
 Corresponds to the **linked lists** and **stacks/queues** sections of the technical interview question list.
 
-## Session 3 (recursion)
+### Session 3 (recursion)
 
 Corresponds to the **recursion** section of the technical interview question list.
+
+### Session 4 (trees)
+
+Corresponds to the **trees** section of the technical interview question list.
