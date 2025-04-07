@@ -16,15 +16,20 @@ If you are not a Problem Solver, it will also help you if you are struggling wit
 
 ### Problem 1: A level-order traversal
 
-Print the nodes on each level of a given tree.
+Print the nodes on each level of a given tree, 
 
-![tree_1.png](tree_1.png)
+```
+5: 1, 4, 6  
+1: 12  
+4: 2  
+6: 10, 8  
+```
 
 ```
 Output:
 0: 5
 1: 1 4 6
-2: 12 2 5 8
+2: 12 2 10 8
 ```
 
 #### Steps to go through
@@ -32,7 +37,7 @@ Output:
 1. Which type of traversal seems like it would make a good "template" for our solution (DFS or BFS)? In what orders are the nodes printed?
 <details>
     <summary>Answer</summary>
-    5, 1, 4, 6, 12, 2, 5, 8
+    5, 1, 4, 6, 12, 2, 10, 8
 </details>
 
 2. There's an iterative and recursive approach. At what point in either approach can we consider a traversal of a level "over"?
