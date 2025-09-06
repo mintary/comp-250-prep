@@ -38,7 +38,7 @@ public static boolean hasUnique(String s) {
 }
 ```
 
-> ![NOTE]
+> [!NOTE]
 > You may have used a dictionary or hashmap in another programming language. Think about how this could save you time here, by preventing the need to iterate over characters you have seen before. Remember that ASCII representations of characters are integers. Without having learned about hashmaps, how can you use this property of characters to make a "dictionary" by indexing an integer array?
 
 ### Exercise 3
