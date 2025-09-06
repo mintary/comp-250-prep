@@ -48,9 +48,9 @@ public static boolean hasUnique(String s) {
 
 In the game **Wordle**, a player enters a 5-letter word guess for the hidden word.
 
-If any given letter is in the correct place and in the correct position, we mark it as green.
+If any given letter is in the hidden word and in the correct position, we mark it as green.
 
-If any given letter is in an incorrect place, but is in the correct position, we mark it as yellow.
+If any given letter is in an incorrect position, but is in the hidden word, we mark it as yellow.
 
 Otherwise, the letter is marked as grey.
 
