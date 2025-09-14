@@ -40,58 +40,54 @@ public static boolean hasUnique(String s) {
 
 > [!NOTE]
 > You may have used a dictionary or hashmap in another programming language. Think about how this could save you time here, by preventing the need to iterate over characters you have seen before. Remember that ASCII representations of characters are integers. Without having learned about hashmaps, how can you use this property of characters to make a "dictionary" by indexing an integer array?
+Sure! Here's a rewritten version of your Wordle-style exercise, but using **integer arrays with digits 0–9** instead of letters:
 
-### Exercise 3
+---
 
-> [!IMPORTANT]
+### Exercise 3 (Digits Edition)
+
+> \[!IMPORTANT]
 > This is a presentation exercise. Kind of.
 
-In the game **Wordle**, a player enters a 5-letter word guess for the hidden word.
+In this game, a player enters a 5-digit guess for a hidden 5-digit number.
 
-If any given letter is in the hidden word and in the correct position, we mark it as green.
+* If any digit is in the hidden number and in the correct position, it is marked as **green**.
+* If any digit is in an incorrect position but exists in the hidden number, it is marked as **yellow**.
+* Otherwise, the digit is marked as **grey**.
 
-If any given letter is in an incorrect position, but is in the hidden word, we mark it as yellow.
-
-Otherwise, the letter is marked as grey.
-
-Implement a method that takes as input the player's guess, the hidden word, and returns the number of yellow letters.
+Implement a method that takes as input the player's guess array and the hidden number array, and returns the number of digits in the guess that also appear in the hidden number, ensuring each digit is counted at most once.
 
 ```
-Input: guess = "apple", hidden = "pears"
+Input: guess = [1, 2, 3, 4, 5], hidden = [5, 2, 0, 4, 1]
 Output: 3
 
-Input: guess = "slate", hidden = "phone"
-Output: 0
-
-Input: guess = "crane", hidden = "check"
-Output: 1
+Input: guess = [1, 1, 1, 0, 2], hidden = [5, 1, 3, 1, 3]
+Output: 2 (we only count the first two 1's)
 ```
 
 ```java
-public static int countYellow(String guess, String hidden) {
+public static int countMatching(int[] guess, int[] hidden) {
     // code here
-};
+}
 ```
 
-#### Bonus: Exercise 3b
+#### Bonus: Exercise 3b (Digits Edition)
 
-Implement a method that takes as input the player's guess, the hidden word, and returns both the number of yellow _and_ green letters.
+Implement a method that takes as input the player's guess array and the hidden number array, and returns *both the number of yellow and green digits*.
 
-The first integer in the array is the number of yellow letters, the second integer in the array is the number of green letters.
+* The first integer in the array is the number of yellow digits.
+* The second integer in the array is the number of green digits.
 
 ```
-Input: guess = "apple", hidden = "pears"
-Output: [3, 0]
-
-Input: guess = "slate", hidden = "phone"
-Output: [0, 1]
-
-Input: guess = "crane", hidden = "check"
-Output: [1, 1]
+Input: guess = [1, 2, 3, 4, 5], hidden = [5, 2, 0, 4, 1]
+Output: [2, 2]
 ```
 
 ```java
-public static int[] countGuess(String guess, String hidden) {
+public static int[] countGuess(int[] guess, int[] hidden) {
     // code here
-};
+}
 ```
+
+---
+
